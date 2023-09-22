@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antimatter Clicker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Antimatter Clicker</h1>
+        <p>Antimatter: <span id="antimatter">0</span></p>
+        <button id="clickButton">Click</button>
+        <p>Antimatter per second: <span id="pps">0</span></p>
+    </div>
+
+    <!-- Antimatter Generators -->
+    <div class="generator-container">
+        <h2>Antimatter Generators</h2>
+        <div class="generator">
+            <span class="generator-name">Generator 1</span>
+            <button class="buy-generator-button" onclick="buyGenerator(1)">Buy</button>
+            <p>Production: <span id="generator1-production">1</span> pps</p>
+            <p>Owned: <span id="generator1-owned">0</span></p>
+            <p>Cost: <span id="generator1-cost">10</span> antimatter</p>
+        </div>
+        <!-- Add more generators as needed -->
+    </div>
+
+    <!-- Bottom Navigation Tabs -->
+    <div class="bottom-nav">
+        <a href="#" class="tab" id="labTab" onclick="openTab('lab')">Lab</a>
+        <a href="#" class="tab" id="generatorTab" onclick="openTab('generator')">Antimatter Generators</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                                                           </html>
